@@ -1,0 +1,299 @@
+{
+  "contractName": "Nft",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Nft.sol\":\"Nft\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Nft.sol\":{\"keccak256\":\"0x439353f350e188721b7878a6808c30587f358f36aa118efa91987e6169ac9e44\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0489f79f862913f897a33ef74960c6051cbd256ca6e988e75dd481ce5fd4140e\",\"dweb:/ipfs/Qmdh2Wu4DR3zzebZ5LjnQHkDHRdHEaodLSdYULDDPjbkug\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220a75bb5320449e374030cff0c3a446ef12732268afbf07194e9aa1073e98e454d64736f6c634300080b0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220a75bb5320449e374030cff0c3a446ef12732268afbf07194e9aa1073e98e454d64736f6c634300080b0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "69:166:1:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "69:166:1:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract Nft{\r\n    string name;\r\n    uint64 amount;\r\n   // uint dateCreated;\r\n    address owner;\r\n\r\n    // constructor(){\r\n    //     owner = msg.sender;\r\n    // }\r\n}",
+  "sourcePath": "C:\\programming\\nftmarketplace\\web3folder\\contracts\\Nft.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Nft.sol",
+    "exportedSymbols": {
+      "Nft": [
+        41
+      ]
+    },
+    "id": 42,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Nft",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 41,
+        "linearizedBaseContracts": [
+          41
+        ],
+        "name": "Nft",
+        "nameLocation": "78:3:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 36,
+            "mutability": "mutable",
+            "name": "name",
+            "nameLocation": "95:4:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "88:11:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 35,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "88:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 38,
+            "mutability": "mutable",
+            "name": "amount",
+            "nameLocation": "113:6:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "106:13:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 37,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "106:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 40,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "159:5:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "151:13:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 39,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "151:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 42,
+        "src": "69:166:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:202:1"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/Nft.sol",
+    "exportedSymbols": {
+      "Nft": [
+        41
+      ]
+    },
+    "id": 42,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:32:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Nft",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 41,
+        "linearizedBaseContracts": [
+          41
+        ],
+        "name": "Nft",
+        "nameLocation": "78:3:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 36,
+            "mutability": "mutable",
+            "name": "name",
+            "nameLocation": "95:4:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "88:11:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 35,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "88:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 38,
+            "mutability": "mutable",
+            "name": "amount",
+            "nameLocation": "113:6:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "106:13:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 37,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "106:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 40,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "159:5:1",
+            "nodeType": "VariableDeclaration",
+            "scope": 41,
+            "src": "151:13:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 39,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "151:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 42,
+        "src": "69:166:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:202:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xC3fFcA60677902C8e34e5FEad1C5a6747C8f61ae",
+      "transactionHash": "0x4faeed88cb3afecae2e32175ee21123e91a48dbe0f3146b20ec4c55c64b795bf"
+    }
+  },
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-09-01T23:21:45.466Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
