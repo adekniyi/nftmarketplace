@@ -3,6 +3,11 @@ pragma solidity >=0.4.22 <0.9.0;
 //hello world
 contract Nft{
     
+    address owner;
+
+    constructor(){
+        owner = msg.sender;
+    }
     enum State{
         Purchased,
         Activated,
@@ -27,8 +32,8 @@ contract Nft{
     error NftHasOwner();
 
     function PurchaseNft(
-        bytes16 nftId,
-        bytes32 proof
+        bytes16 nftId, //0x00000000000000000000000000003130
+        bytes32 proof //0x0000000000000000000000000000313000000000000000000000000000003130
     )
     external payable{
         bytes32 nftHash = keccak256((abi.encodePacked(nftId,msg.sender)));
@@ -51,14 +56,19 @@ contract Nft{
                 state: State.Purchased
             });
         }else{
-            ownerNft[previosHash] = NftDetails({
-                id: 1,
-                price : msg.value,
-                proof: proof,
+            NftDetails memory previousNft = ownerNft[previosHash];       
+          
+          OwnerNfthash[nftId] = nftHash;
+
+            ownerNft[nftHash] = NftDetails({
+                id: previousNft.id,
+                price : previousNft.price,
+                proof: previousNft.proof,
                 owner: msg.sender,
-                state: State.Purchased
+                state: previousNft.state
             });
-            OwnerNfthash[nftId] = nftHash;
+            
+            delete ownerNft[previosHash];
         }
     }
     // function AddNft(string memory ntfName, uint64 price, string memory nftDescription) public returns(bool success){
